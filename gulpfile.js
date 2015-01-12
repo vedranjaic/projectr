@@ -1,7 +1,7 @@
 // Gulp & plugins
 var gulp = require('gulp'),
 	gutil = require('gulp-util'),
-	sass = require('gulp-sass'),
+	sass = require('gulp-ruby-sass'),
 	autoprefixer = require ('gulp-autoprefixer'),
 	uglify = require('gulp-uglify'),
 	imagemin = require('gulp-imagemin'),
@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 var src = {
 	images: 'app/src/images/*',
 	sass: 'app/src/**/*.scss',
-	php: 'app/*.php',
+	php: 'app/**/*.php',
 	js: 'app/src/js/**/*.js'
 }
 
@@ -46,17 +46,21 @@ gulp.task('styles', function () {
 
 	return gulp.src(src.sass)
 		.pipe(sass({
-			style: 'expanded',
-			errLogToConsole: false,
-			onError: function(err) {
-				return notify().write(err);
-			}
+			style: 'expanded'
+		}))
+		.on("error", notify.onError({
+			title: "SASS Compile error",
+			message: "<%= error.message %>"
 		}))
 		.pipe(gulp.dest(dest.css))
 		.pipe(reload({
 			stream:true
 		}))
-		.pipe(notify('SASS approves this syntax!'));
+		.pipe(notify({
+			message: 'SASS approves this syntax!',
+			onLast: true,
+			sound: 'Hero'
+		}));
 
 });
 
@@ -65,11 +69,11 @@ gulp.task('styles-min', function () {
 
 	return gulp.src(src.sass)
 		.pipe(sass({
-			style: 'compressed',
-			errLogToConsole: false,
-			onError: function(err) {
-				return notify().write(err);
-			}
+			style: 'compressed'
+		}))
+		.on("error", notify.onError({
+			title: "SASS Compile error",
+			message: "<%= error.message %>"
 		}))
 		.pipe(autoprefixer())
 		.pipe(gulp.dest(dest.css))
@@ -86,10 +90,11 @@ gulp.task('images', function () {
 				cleanupIDs: false,
 				cleanupAttrs: false
 			}],
-			use: [pngquant()],
-			onError: function(err) {
-				return notify().write(err);
-			}
+			use: [pngquant()]
+		}))
+		.on("error", notify.onError({
+			title: "Image Optimization error",
+			message: "<%= error.message %>"
 		}))
 		.pipe(gulp.dest(dest.images))
 });
@@ -99,8 +104,8 @@ gulp.task('browser-sync', function() {
 	browserSync({
 		proxy: "localhost:8888",
 		ghostMode: false,
-		notify: false,
-		open: "external"
+		// tunnel: 'projectr',
+		open: false
 	});
 	gulp.watch(src.php, reload);
 	gulp.watch(['style.css'], reload);
