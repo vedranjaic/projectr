@@ -1,1 +1,3 @@
-## Taskr
+## Projectr
+
+Starter project

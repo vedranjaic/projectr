@@ -44,10 +44,9 @@ gulp.task('scripts', function() {
 // Compile SASS
 gulp.task('styles', function () {
 
-	return gulp.src(src.sass)
-		.pipe(sass({
+	return sass(src.sass, {
 			style: 'expanded'
-		}))
+		})
 		.on("error", notify.onError({
 			title: "SASS Compile error",
 			message: "<%= error.message %>"
@@ -67,10 +66,9 @@ gulp.task('styles', function () {
 // Compile SASS.min
 gulp.task('styles-min', function () {
 
-	return gulp.src(src.sass)
-		.pipe(sass({
+	return sass(src.sass, {
 			style: 'compressed'
-		}))
+		})
 		.on("error", notify.onError({
 			title: "SASS Compile error",
 			message: "<%= error.message %>"
