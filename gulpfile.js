@@ -32,6 +32,18 @@ var dest = {
 gulp.task('scripts', function() {
 
 	return gulp.src(src.js)
+		.on("error", notify.onError({
+			title: "Uglify JS error",
+			message: "<%= error.message %>"
+		}))
+		.pipe(gulp.dest(dest.js))
+
+});
+
+// Minify js
+gulp.task('scripts-min', function() {
+
+	return gulp.src(src.js)
 		.pipe(uglify())
 		.on("error", notify.onError({
 			title: "Uglify JS error",
@@ -75,6 +87,11 @@ gulp.task('styles-min', function () {
 		}))
 		.pipe(autoprefixer())
 		.pipe(gulp.dest(dest.css))
+		.pipe(notify({
+			message: 'SASS approves this syntax!',
+			onLast: true,
+			sound: 'Hero'
+		}));
 
 });
 
@@ -117,10 +134,10 @@ gulp.task('watch', function() {
 })
 
 // Default
-gulp.task('default', ['scripts', 'styles', 'browser-sync'], function(){
+gulp.task('default', ['styles', 'browser-sync'], function(){
 	gulp.watch(src.sass, ['styles']);
 	gulp.watch(src.js, ['scripts']);
 });
 
 // Production
-gulp.task('production', ['scripts', 'styles-min', 'images']);
+gulp.task('production', ['scripts-min', 'styles-min', 'images']);
