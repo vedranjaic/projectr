@@ -12,10 +12,10 @@ var gulp = require('gulp'),
 
 // Sources
 var src = {
-	images: 'app/src/images/*',
-	sass: 'app/src/**/*.scss',
-	php: 'app/**/*.php',
-	js: 'app/src/js/**/*.js'
+	images: 'src/images/*',
+	sass: 'src/**/*.scss',
+	php: '**/*.php',
+	js: 'src/js/**/*.js'
 }
 
 // Destinations
