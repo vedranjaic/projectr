@@ -12,8 +12,9 @@ var gulp = require('gulp'),
 
 // Sources
 var src = {
-	images: 'src/images/*',
-	sass: 'src/**/*.scss',
+	images: 'src/images/*.{gif,jpg,png,svg,ico}',
+	sass: 'src/sass/',
+	scss: 'src/sass/**/*.scss',
 	php: '**/*.php',
 	js: 'src/js/**/*.js'
 }
@@ -28,7 +29,7 @@ var dest = {
 
 
 // TASKS
-// Minify js
+// Compile Scripts & Check for errors
 gulp.task('scripts', function() {
 
 	return gulp.src(src.js)
@@ -40,7 +41,7 @@ gulp.task('scripts', function() {
 
 });
 
-// Minify js
+// Compile Scripts.min
 gulp.task('scripts-min', function() {
 
 	return gulp.src(src.js)
@@ -57,12 +58,16 @@ gulp.task('scripts-min', function() {
 gulp.task('styles', function () {
 
 	return sass(src.sass, {
-			style: 'expanded'
+			style: 'expanded',
+			sourcemap: true
 		})
 		.on("error", notify.onError({
 			title: "SASS Compile error",
 			message: "<%= error.message %>"
 		}))
+		.pipe(autoprefixer({
+			cascade: false
+        }))
 		.pipe(gulp.dest(dest.css))
 		.pipe(reload({
 			stream:true
@@ -135,7 +140,7 @@ gulp.task('watch', function() {
 
 // Default
 gulp.task('default', ['styles', 'browser-sync'], function(){
-	gulp.watch(src.sass, ['styles']);
+	gulp.watch(src.scss, ['styles']);
 	gulp.watch(src.js, ['scripts']);
 });
 

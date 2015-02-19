@@ -1,6 +1,6 @@
 /*!
  * Project name: Projectr
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Vedran Jaic
  */
 
@@ -8,9 +8,12 @@
 @import "susy";
 @import "variables";
 @import "mixins";
+
+// Frameworks
 @import "../css/normalize";
 
 // ------------------------------------[ style.css start ]
+
 // Defaults
 @import "defaults";
 @import "typography";
