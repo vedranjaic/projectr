@@ -1,6 +1,6 @@
 {
   "name": "projectr",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Project template",
   "main": "/app/index.php",
   "scripts": {

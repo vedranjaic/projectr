@@ -1,6 +1,6 @@
-		<script src="dest/js/jquery.js"></script>
+		<script src="<?= $main_url; ?>dest/js/jquery.js"></script>
 		<script>window.jQuery || document.write('<script src="dest/js/jquery.min.js"><\/script>')</script>
-		<script src="dest/js/app.js"></script>
+		<script src="<?= $main_url; ?>dest/js/app.js"></script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>

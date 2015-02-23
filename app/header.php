@@ -6,15 +6,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>app</title>
+		<title>Project - Client</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Place favicon.ico and apple-touch-icon.png -->
+		<link href="<?= $main_url; ?>/dest/images/favicon.ico"rel="icon" rel="icon" type="image/x-icon"/>
+		<link href="<?= $main_url; ?>/dest/images/apple-touch-120.png" rel="apple-touch-icon" sizes="120x120">
+		<link href="<?= $main_url; ?>/dest/images/apple-touch-152.png" rel="apple-touch-icon" sizes="152x152">
 
-		<link rel="stylesheet" href="style.css">
-		<script src="dest/js/modernizr.js"></script>
+		<link href="<?= $main_url; ?>style.css" rel="stylesheet">
+		<script src="<?= $main_url; ?>dest/js/modernizr.js"></script>
 	</head>
 	<body>
 		<!--[if lte IE 8]>
