@@ -1,3 +1,3 @@
 ## Projectr
 
-Starter project
+Simple project starter template
