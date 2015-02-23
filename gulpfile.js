@@ -67,7 +67,7 @@ gulp.task('styles', function () {
 		}))
 		.pipe(autoprefixer({
 			cascade: false
-        }))
+		}))
 		.pipe(gulp.dest(dest.css))
 		.pipe(reload({
 			stream:true
@@ -90,7 +90,9 @@ gulp.task('styles-min', function () {
 			title: "SASS Compile error",
 			message: "<%= error.message %>"
 		}))
-		.pipe(autoprefixer())
+		.pipe(autoprefixer({
+			cascade: false
+		}))
 		.pipe(gulp.dest(dest.css))
 		.pipe(notify({
 			message: 'SASS approves this syntax!',

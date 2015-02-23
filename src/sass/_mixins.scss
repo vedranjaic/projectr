@@ -11,3 +11,13 @@
 		@media (min-width: 768px)  { @content; }
 	}
 }
+
+// http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+@mixin orientation($position) {
+	@if $position == landscape {
+		@media only screen and (orientation : landscape) { @content; }
+	}
+	@else if $position == portrait {
+		@media only screen and (orientation : portrait) { @content; }
+	}
+}

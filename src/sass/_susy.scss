@@ -1,4 +1,10 @@
 // Susy
-// ====
-
 @import "susy/language/susy";
+
+$susy: (
+	columns: 12,
+	gutters: 1/4,
+	container: 1070px
+);
+
+@include border-box-sizing;
