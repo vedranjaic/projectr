@@ -1,3 +1,10 @@
 $(document).ready(function() {
-	// put all your jQuery goodness in here.
+
+	// Viewport width
+	$('#monitor').html($(window).width());
+
+	$(window).resize(function() {
+		var viewportWidth = $(window).width();
+		$('#monitor').html(viewportWidth);
+	});
 });

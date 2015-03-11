@@ -11,11 +11,12 @@
 		<meta name="keywords" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link href="<?= $main_url; ?>/dest/images/favicon.ico"rel="icon" rel="icon" type="image/x-icon"/>
-		<link href="<?= $main_url; ?>/dest/images/apple-touch-120.png" rel="apple-touch-icon" sizes="120x120">
-		<link href="<?= $main_url; ?>/dest/images/apple-touch-152.png" rel="apple-touch-icon" sizes="152x152">
+		<link rel="icon" type="image/x-icon" href="<?= $main_url; ?>/dest/images/favicon.ico"/>
+		<link rel="apple-touch-icon" href="<?= $main_url; ?>/dest/images/apple-touch-120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="<?= $main_url; ?>/dest/images/apple-touch-152.png" sizes="152x152">
 
-		<link href="<?= $main_url; ?>style.css" rel="stylesheet">
+		<link rel="stylesheet" href="<?= $main_url; ?>style.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<script src="<?= $main_url; ?>dest/js/modernizr.js"></script>
 	</head>
 	<body>
