@@ -135,10 +135,13 @@ gulp.task('browser-sync', function() {
 	gulp.watch(src.js, reload);
 });
 
+// Init project
+gulp.task('init', ['scripts', 'images']);
+
 // Watch
 gulp.task('watch', function() {
 	gulp.watch(src.sass, ['styles']);
-})
+});
 
 // Default
 gulp.task('default', ['styles', 'browser-sync'], function(){
