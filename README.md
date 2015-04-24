@@ -4,4 +4,4 @@ Simple project starter template
 
 # TODO
 
-- nothing \o/
+- active state on <li>...</li> `<?= $path["call_parts"][0]=="PAGE_NAME" ? " class='active'" : "" ?>`
