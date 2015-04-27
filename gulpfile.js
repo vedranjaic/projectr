@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 	sass = require('gulp-ruby-sass'),
 	autoprefixer = require ('gulp-autoprefixer'),
 	uglify = require('gulp-uglify'),
+	concat = require('gulp-concat'),
 	imagemin = require('gulp-imagemin'),
 	pngquant = require('imagemin-pngquant'),
 	browserSync = require('browser-sync'),
@@ -12,6 +13,7 @@ var gulp = require('gulp'),
 
 // Sources
 var src = {
+	scripts: ["src/js/jquery.js", "src/js/modernizr.js", "src/js/app.js"],
 	images: 'src/images/*.{gif,jpg,png,svg,ico}',
 	sass: 'src/sass/',
 	scss: 'src/sass/**/*.scss',
@@ -51,6 +53,16 @@ gulp.task('scripts-min', function() {
 			message: "<%= error.message %>"
 		}))
 		.pipe(gulp.dest(dest.js))
+
+});
+
+// Concat & minify scripts
+gulp.task('scripts-concat', function() {
+
+	return gulp.src(src.scripts)
+		.pipe(concat('skriptica.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('app/dest/js/'));
 
 });
 
@@ -150,4 +162,4 @@ gulp.task('default', ['styles', 'browser-sync'], function(){
 });
 
 // Production
-gulp.task('production', ['scripts-min', 'styles-min', 'images']);
+gulp.task('production', ['scripts-concat', 'styles-min', 'images']);
