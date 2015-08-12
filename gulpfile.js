@@ -3,6 +3,7 @@ var gulp = require('gulp'),
 	gutil = require('gulp-util'),
 	sass = require('gulp-ruby-sass'),
 	autoprefixer = require ('gulp-autoprefixer'),
+	sourcemaps = require ('gulp-sourcemaps'),
 	uglify = require('gulp-uglify'),
 	concat = require('gulp-concat'),
 	imagemin = require('gulp-imagemin'),
@@ -79,6 +80,10 @@ gulp.task('styles', function () {
 		}))
 		.pipe(autoprefixer({
 			cascade: false
+		}))
+		.pipe(sourcemaps.write('/', {
+			includeContent: false,
+			sourceRoot: '/'
 		}))
 		.pipe(gulp.dest(dest.css))
 		.pipe(reload({
