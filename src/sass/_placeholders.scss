@@ -1,0 +1,10 @@
+// PLACEHOLDERS
+
+// Text overflow
+%text-overflow {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: top;
+}
