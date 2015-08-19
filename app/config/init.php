@@ -1,7 +1,8 @@
 <?php
 
-	// Main URL
-	$main_url = "http://localhost:3000/";
+	// Main URL (localhost or IP)
+	// $main_url = "http://localhost:3000/";
+	$main_url = "http://192.168.0.19:3000/";
 
 	// Start parse path
 	$path = parse_path();

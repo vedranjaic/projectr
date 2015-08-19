@@ -11,9 +11,9 @@ include('config/init.php');
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Favicon -->
-		<link rel="icon" type="image/x-icon" href="<?= $main_url; ?>/dest/images/favicon.ico"/>
-		<link rel="apple-touch-icon" href="<?= $main_url; ?>/dest/images/apple-touch-120.png" sizes="120x120">
-		<link rel="apple-touch-icon" href="<?= $main_url; ?>/dest/images/apple-touch-152.png" sizes="152x152">
+		<link rel="icon" type="image/x-icon" href="<?= $main_url; ?>dest/images/favicon.ico"/>
+		<link rel="apple-touch-icon" href="<?= $main_url; ?>dest/images/apple-touch-120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="<?= $main_url; ?>dest/images/apple-touch-152.png" sizes="152x152">
 
 		<!-- Styles -->
 		<link rel="stylesheet" href="<?= $main_url; ?>style.css">

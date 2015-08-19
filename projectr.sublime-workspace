@@ -519,6 +519,54 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/sass/_mixins.scss",
+			"settings":
+			{
+				"buffer_size": 1577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/sass/_placeholders.scss",
+			"settings":
+			{
+				"buffer_size": 166,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/sass/style.scss",
+			"settings":
+			{
+				"buffer_size": 520,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 879,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.php",
+			"settings":
+			{
+				"buffer_size": 2139,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/init.php",
+			"settings":
+			{
+				"buffer_size": 1025,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -604,6 +652,7 @@
 	},
 	"file_history":
 	[
+		"/Users/vedranjaic/dev/projectr/src/sass/_animations.scss",
 		"/Users/vedranjaic/dev/oracle/inspiresocialpx/chat/README.md",
 		"/Users/vedranjaic/dev/oracle/inspiresocialpx/chat/app/chat-message-friend.php",
 		"/Users/vedranjaic/dev/oracle/inspiresocialpx/chat/app/chat-message-myself.php",
@@ -730,8 +779,7 @@
 		"/Users/vedranjaic/dev/neos/neos_oracle_conf/app/lecture.php",
 		"/Users/vedranjaic/dev/neos/neos_oracle_conf/app/speaker.php",
 		"/Users/vedranjaic/dev/neos/neos_oracle_conf/app/venue.php",
-		"/Users/vedranjaic/dev/neos/neos_oracle_conf/src/sass/_layout-lecture.scss",
-		"/Users/vedranjaic/dev/neos/neos_oracle_conf/src/sass/_layout-speaker.scss"
+		"/Users/vedranjaic/dev/neos/neos_oracle_conf/src/sass/_layout-lecture.scss"
 	],
 	"find":
 	{
@@ -750,6 +798,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dest",
+			"    ",
+			" ",
+			"  ",
+			"    ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
 			"chat",
 			"div",
 			"section",
@@ -864,20 +925,7 @@
 			"https://www.hrvatskitelekom.hr/webresources/newsletter/",
 			"btn-add-basket",
 			"  ",
-			"    ",
-			"      ",
-			"        ",
-			"adresa",
-			"exampleInputEmail1",
-			"  ",
-			"    ",
-			"      ",
-			"    ",
-			"details",
-			"nature",
-			"row",
-			"includes",
-			"font-teaser"
+			"    "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -932,6 +980,214 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/sass/_mixins.scss",
+					"settings":
+					{
+						"buffer_size": 1577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1339,
+								1339
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 384.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/sass/_placeholders.scss",
+					"settings":
+					{
+						"buffer_size": 166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								163,
+								163
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/sass/style.scss",
+					"settings":
+					{
+						"buffer_size": 520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								87
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/index.php",
+					"settings":
+					{
+						"buffer_size": 2139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								438,
+								438
+							],
+							[
+								519,
+								519
+							],
+							[
+								623,
+								623
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/config/init.php",
+					"settings":
+					{
+						"buffer_size": 1025,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
